@@ -8,7 +8,8 @@
 
   \begin{enumerate}
     \item \alert{优化算法}
-    \item \alert{工作流}
+    \item \alert{计算梯度}
+    \item \alert{应用梯度}    
   \end{enumerate}    
 \end{frame}
 
@@ -24,6 +25,8 @@ class Optimizer(object):
     return self.apply_gradients(grads_and_vars)
   \end{python}
 \end{frame}
+
+\subsection{计算梯度}
 
 \begin{frame}[fragile]{计算梯度}
   \begin{python} 
@@ -84,6 +87,8 @@ def SquareGrad(op, grad):
     \includegraphics[width=0.55\textwidth]{square-grad.png}
   \end{figure}
 \end{frame}
+
+\subsection{应用梯度}
 
 \begin{frame}[fragile]{应用梯度}
   \begin{python} 
