@@ -1,0 +1,27 @@
+\documentclass[xcolor=svgnames, 11pt]{beamer}
+
+\graphicspath{{figures/}}
+
+\input{setup/format.tex}
+\input{setup/beamerformat.tex}
+\input{setup/commands.tex}
+
+\input{content/title.tex}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{内容}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\input{content/overview.tex}
+\input{content/prog-model.tex}
+\input{content/train-model.tex}
+\input{content/mnist.tex}
+\input{content/reference.tex}
+
+\end{document}
